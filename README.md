@@ -7,6 +7,9 @@ Github act
 act -l
 act -j job_name
 act workflow_dispatch -j job_name --input param=value
+git config --list
+git config --local user.name "Your Name"
+git config --local user.email "you@example.com"
 git branch
 git branch new_branch
 git checkout branch_name
@@ -20,5 +23,8 @@ git diff
 git stash
 git stash list
 git stash apply stash@{n}
+git fetch
+git pull
+git pull <remote> <branch>
 
 

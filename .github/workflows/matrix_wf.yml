@@ -12,4 +12,5 @@ jobs:
       - name: Matrix
         id: demo-matrix
         run: |
+          echo "Print github.event.ref: ${{ github.event.ref }}"
           echo "Matrix item: ${{ matrix.step }}"

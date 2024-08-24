@@ -23,3 +23,4 @@ runs:
         echo ${{ inputs.value1 }}
         echo $is_success
         echo "is_success=$is_success" >> $GITHUB_OUTPUT
+      shell: bash
