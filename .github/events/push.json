@@ -1,0 +1,24 @@
+{
+    "ref": "refs/heads/main",
+    "before": "0000000000000000000000000000000000000000",
+    "after": "1111111111111111111111111111111111111111",
+    "repository": {
+      "id": 123456789,
+      "name": "my-repo",
+      "full_name": "my-org/my-repo"
+    },
+    "pusher": {
+      "name": "octocat",
+      "email": "octocat@github.com"
+    },
+    "head_commit": {
+      "id": "1111111111111111111111111111111111111111",
+      "message": "Commit message",
+      "timestamp": "2024-08-21T12:00:00Z",
+      "author": {
+        "name": "octocat",
+        "email": "octocat@github.com"
+      }
+    }
+  }
+  

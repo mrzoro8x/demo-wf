@@ -1,0 +1,19 @@
+{
+    "action": "opened",
+    "number": 42,
+    "pull_request": {
+      "id": 123456789,
+      "node_id": "MDExOlB1bGxSZXF1ZXN0MTIzNDU2Nzg5",
+      "url": "https://api.github.com/repos/my-org/my-repo/pulls/42",
+      "title": "Update README",
+      "user": {
+        "login": "octocat"
+      }
+    },
+    "repository": {
+      "id": 123456789,
+      "name": "my-repo",
+      "full_name": "my-org/my-repo"
+    }
+  }
+  

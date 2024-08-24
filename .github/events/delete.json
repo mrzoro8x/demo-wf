@@ -1,0 +1,15 @@
+{
+    "ref": "refs/heads/feature-branch",
+    "ref_type": "branch",
+    "repository": {
+      "id": 123456789,
+      "name": "example-repo",
+      "full_name": "username/example-repo",
+      "private": false
+    },
+    "pusher": {
+      "name": "username",
+      "email": "username@example.com"
+    }
+  }
+  
