@@ -11,4 +11,4 @@ jobs:
       - name: Print current date
         id: print_date
         run: |
-          echo $(date).
+          echo $(date)
