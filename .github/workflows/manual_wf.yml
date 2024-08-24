@@ -1,0 +1,26 @@
+name: Demo wf
+
+on:
+  workflow_dispatch:
+    inputs:
+      param1:
+        type: string
+        required: true
+
+concurrency:
+  group: ${{ inputs.param1 || github.event.ref }}
+  cancel-in-progress: false
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - id: check_value
+        uses: ./.github/actions/ca1
+        with:
+          value1: ${{ inputs.param1 }}
+    outputs:
+      is_success: ${{ steps.check_value.outputs.is_success }}
+

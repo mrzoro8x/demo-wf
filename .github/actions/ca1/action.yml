@@ -1,0 +1,25 @@
+name: Custom action
+description: A custom action
+
+inputs:
+  value1:
+    description: Value...
+    default: ""
+    required: false
+
+outputs:
+  is_success:
+    description: "Output value"
+    value: ${{ steps.check_status.outputs.is_success }}
+
+runs:
+  using: composite
+  steps:
+    - name: Check something
+      id: check_status
+      run: |
+        is_success="true"
+        echo "Action ca1 called: "
+        echo ${{ inputs.value1 }}
+        echo $is_success
+        echo "is_success=$is_success" >> $GITHUB_OUTPUT

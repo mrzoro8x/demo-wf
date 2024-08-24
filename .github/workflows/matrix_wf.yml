@@ -1,0 +1,15 @@
+name: Matrix demo
+
+on: 
+  workflow_dispatch:
+jobs:
+  run-matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        step: [1, 2, 3, 4, 5]
+    steps:
+      - name: Matrix
+        id: demo-matrix
+        run: |
+          echo "Matrix item: ${{ matrix.step }}"
