@@ -17,7 +17,7 @@ jobs:
           echo "Print github.event.ref: ${{ github.event.ref }}"
           echo "Matrix item: ${{ matrix.step }}"
           echo "Environmet variable: ${{ vars.TEST_KEY }}"
-          echo "REPO var: ${{ var.REPO_VAR }}"
+          echo "REPO var: ${{ vars.REPO_VAR }}"
           echo "Secret repo: ${{ secrets.REPO_KEY }}"
           echo "Secret env: ${{ secrets.ENV_KEY }}"
           echo "Secret variable: ${{ secrets.API_KEY }}"
