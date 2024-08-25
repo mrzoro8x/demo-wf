@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   run-matrix:
+    environment: "dev"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -14,3 +15,7 @@ jobs:
         run: |
           echo "Print github.event.ref: ${{ github.event.ref }}"
           echo "Matrix item: ${{ matrix.step }}"
+          echo "Environmet variable: ${{ vars.TEST_KEY }}"
+          echo "Secret repo: ${{ secrets.REPO_KEY }}"
+          echo "Secret env: ${{ secrets.ENV_KEY }}"
+          echo "Secret variable: ${{ secrets.API_KEY }}"
