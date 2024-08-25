@@ -8,6 +8,7 @@ jobs:
     strategy:
       matrix:
         step: [1, 2, 3, 4, 5]
+      max-parallel: 1
     steps:
       - name: Matrix
         id: demo-matrix
